@@ -54,7 +54,7 @@ public class ToolsQATest {
         $("#hobbiesWrapper").$(byText("Music")).click();
 
         //upload pictures
-        //$("#uploadPicture").uploadFromClasspath("images.png");
+        $("#uploadPicture").uploadFromClasspath("images.png");
 
         // address
         $("#currentAddress").val("Moscow, Prospekt Mira str.");
@@ -76,7 +76,7 @@ public class ToolsQATest {
         $(".table-responsive").$(byText("Date of Birth")).parent().shouldHave(text("17 May,2000"));
         $(".table-responsive").$(byText("Subjects")).parent().shouldHave(text("Chemistry"));
         $(".table-responsive").$(byText("Hobbies")).parent().shouldHave(text("Sports, Reading, Music"));
-        //$(".table-responsive").$(byText("Picture")).parent().shouldHave(text("images.png"));
+        $(".table-responsive").$(byText("Picture")).parent().shouldHave(text("images.png"));
         $(".table-responsive").$(byText("Address")).parent().shouldHave(text("Moscow, Prospekt Mira str."));
         $(".table-responsive").$(byText("State and City")).parent().shouldHave(text("Uttar Pradesh Agra"));
 
